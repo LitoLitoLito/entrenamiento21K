@@ -1,0 +1,99 @@
+/* styles.css */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f7f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+h1 {
+    text-align: center;
+    color: #6a89cc;
+    animation: fadeIn 1s ease-out;
+}
+
+.start-date {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+label {
+    font-size: 1.1rem;
+}
+
+input[type="date"] {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#training-plan {
+    margin-top: 1.5rem;
+    animation: fadeIn 1s ease-out;
+}
+
+.progress {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.progress h2 {
+    color: #4c956c;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+table th, table td {
+    padding: 0.8rem;
+    text-align: center;
+    border: 1px solid #ddd;
+    transition: background-color 0.3s ease;
+}
+
+table th {
+    background-color: #6a89cc;
+    color: white;
+}
+
+table tr:nth-child(even) {
+    background-color: #f1f5f9;
+}
+
+table tr:hover {
+    background-color: #e0f7fa;
+    cursor: pointer;
+}
+
+.completed {
+    background-color: #d4edda !important;
+    text-decoration: line-through;
+    animation: fadeOut 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
